@@ -77,7 +77,7 @@ def get_authorization_code(signin_url):
         logging.info("Code Obtained: %s", code)
     else:
         logging.error("Unable to obtain code via sign in URL")
-    
+
     decoded_code = urllib.unquote(code).decode('utf8')
     return decoded_code
     
